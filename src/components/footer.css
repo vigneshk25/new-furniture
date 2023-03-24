@@ -1,0 +1,217 @@
+/* footer */
+.footer{
+    padding-top: 40px;
+    color: white;
+    font-family: 'poppins';
+    background-color: #23262f;
+}
+
+.footerHead{
+    display: flex;
+    justify-content: space-evenly;
+}
+.flex{
+    display: flex;
+    gap: 200px;
+}
+
+.contact>p{
+    padding-bottom: 12px;
+    padding-left: 20px;
+}
+
+
+.phone{
+    letter-spacing: 1px;
+    display: flex;
+    gap: 5px;
+    padding-bottom: 5px;
+}
+.phone>h2{
+    padding-top: 5px;
+    font-size: 14px;
+}
+.phone>img{
+    margin-top: 8px;
+    width: 15px;
+    height: 15px;
+}
+.location{
+    display: flex;
+    gap: 10px;
+}
+.location>h1{
+    font-size: 17px;
+    padding-top: 10px;
+}
+.address>p{
+    font-size: 14px;
+}
+.location>img{
+    width: 30px;
+    height: 30px;
+}
+
+
+.copyright{
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    background-color: #13141a;
+}
+
+
+
+/* media screen  tab view */
+
+@media screen and (max-width : 929px) {
+    .footer{
+        padding-top: 20px;
+        color: white;
+        font-family: 'poppins';
+        background-color: #23262f;
+    }
+    .brandName{
+        font-size: 14px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .footerHead{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .contact>p{
+        font-size: 16px;
+        padding-bottom: 18px;
+        padding-left: 30px;
+    }
+    
+    
+    .phone{
+        letter-spacing: 1px;
+        display: flex;
+        gap: 10px;
+        padding-bottom: 5px;
+    }
+    .phone>h2{
+        padding-top: 5px;
+        font-size: 13px;
+    }
+    .phone>img{
+        margin-top: 8px;
+        width: 15px;
+        height: 15px;
+    }
+    .location{
+        display: flex;
+        gap: 10px;
+    }
+    .location>h1{
+        font-size: 17px;
+        padding-top: 10px;
+    }
+    .address>p{
+        padding-top: 10px;
+        font-size: 14px;
+    }
+    .location>img{
+        width: 30px;
+        height: 30px;
+    }
+    .contact>p>a:hover{
+        color: red;
+    }
+    .flex{
+        display: flex;
+        justify-content: space-around;
+    }
+    .copyright{
+        text-align: center;
+        padding: 15px;
+        font-size: 11px;
+        background-color: #13141a;
+    }
+}
+
+/* media screen  mobile view */
+
+
+@media screen and (max-width : 460px) {
+    .brandName{
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+    .footer{
+        padding-top: 20px;
+        color: white;
+        font-family: 'poppins';
+        background-color: #23262f;
+    }
+    .flex{
+        flex-direction: column;
+        padding-left: 60px;
+        gap: 10px;
+    }
+    .footerHead{
+        display: flex;  
+        flex-direction: column;
+    }
+    
+    .contact>p{
+        padding-bottom: 1px;
+        font-size: 17px;
+        letter-spacing: 1px;
+    }
+    
+    
+    .phone{
+        letter-spacing: 1px;
+        display: flex;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+    .phone>h2{
+        padding-top: 10px;
+        font-size: 15px;
+    }
+    .phone>img{
+        margin-top: 15px;
+        width: 15px;
+        height: 15px;
+    }
+    .address{
+        padding-bottom: 20px;
+    }
+    .location{
+        display: flex;
+        gap: 10px;
+    }
+    .location>h1{
+        font-size: 17px;
+    }
+    .location>img{
+        width: 30px;
+        height: 30px;
+    }
+    .address>p{
+        font-size: 14px;
+        padding-left: 40px;
+    }
+    
+    
+    .copyright{
+        text-align: center;
+        padding: 10px;
+        font-size: 10px;
+        background-color: #13141a;
+    }
+    .contact:hover{
+        color: red;
+        transform: scale(1.1); 
+        transition-duration: 1000ms;
+    
+    }
+}

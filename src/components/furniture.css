@@ -1,0 +1,150 @@
+/* Furniture and hometheaters  */
+
+.aboutProct{
+    padding: 50px;
+}
+.aboutFurniture{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.furnitureImageFlex{
+    padding: 10px;
+}
+
+.furnitureImageFlex>img{
+    width: 600px;
+    border-radius: 10px;
+}
+
+.furnitureImageFlex>img:hover{
+    transform: scale(1.02); 
+    transition-duration: 1000ms;
+
+}
+
+.furnitureText{
+    margin: auto;
+    padding: 30px;
+    font-family: 'poppins';
+}
+
+.furnitureText:hover{
+    transform: scale(1.02); 
+    transition-duration: 1000ms;
+
+}
+
+.furnitureText>h1{
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+.furnitureText>p{
+    font-size: 12px;
+}
+
+
+
+/* media screen  tab view */
+
+@media screen and (max-width : 929px) {
+
+    .aboutProct{
+        padding: 30px;
+    }
+    .aboutFurniture{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .furnitureImageFlex{
+        padding: 10px;
+    }
+    
+    .furnitureImageFlex>img{
+        width: 100%;
+        border-radius: 20px;
+        padding: 10px;
+
+    }
+    
+    .furnitureImageFlex>img:hover{
+        transform: scale(1.02); 
+        transition-duration: 1000ms;
+    
+    }
+    
+    .furnitureText{
+        margin: auto;
+        padding: 30px;
+        font-family: 'poppins';
+    }
+    
+    .furnitureText:hover{
+        transform: scale(1.02); 
+        transition-duration: 1000ms;
+    
+    }
+    
+    .furnitureText>h1{
+        font-size: 24px;
+        padding-bottom: 10px;
+    }
+    
+    .furnitureText>p{
+        font-size: 13px;
+        width: 100%;
+    }
+}
+
+/* media screen  mobile view */
+
+
+@media screen and (max-width : 460px) {
+    .aboutProct{
+        padding: 20px;
+    }
+    .aboutFurniture{
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+        border-radius: 10px;
+        display: flex;
+        gap: 0px;
+        flex-direction: column;
+    }
+    
+    .furnitureImageFlex{
+        padding: 10px;
+    }
+    
+    .furnitureImageFlex>img{
+        width: 100%;
+        border-radius: 20px;
+        padding: 10px;
+
+    }
+    
+    .aboutFurniture{
+        transform: scale(1.02); 
+        transition-duration: 1000ms;
+    
+    }
+    
+    .furnitureText{
+        margin: auto;
+        padding: 30px;
+        font-family: 'poppins';
+    }
+    
+    .furnitureText>h1{
+        font-size: 17px;
+        padding-bottom: 10px;
+    }
+    
+    .furnitureText>p{
+        font-size: 12px;
+    }
+}
