@@ -1,15 +1,17 @@
 /* our services */
 .ourServices{
-    height: 90vh;
+    width: 100%;
     padding-top: 40px;
+    padding-bottom: 20px;
     background-color: white;
     font-family: 'poppins';
+    padding-top: 100px;
 }
 
 .topSecServices{
     padding: 10px;
     margin: auto;
-    width: 70%;
+    width: 80%;
     text-align: center;
 }
 
@@ -23,38 +25,52 @@
     text-transform: uppercase;
 }
 .servicesFlex{
-    display: flex;
-    gap: 10px;
-    justify-content: space-evenly;
-    margin: 20px;
-    padding: 20px;
-}
-.insideServices{
-    width: auto;
-    font-family: 'poppins';
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 20px;
+    grid-auto-rows: minmax(100px , auto);
+    margin:5px;
     padding: 10px;
 }
+.insideServices{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 400px;
+    height: 400px;
+    font-family: 'poppins';
+    border-radius: 15px;
+    padding: 20px 10px;
+}
+
+.insideServices:hover{
+    transform: scale(1.01); 
+    transition-duration: 1000ms;
+    border-radius: 10px;
+    cursor: pointer;
+}
 .insideServices>h4{
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 10px;
     font-size: 16px;
     padding-left: 5px;
 }
 
 .insideServices>p{
-    padding-left: 5px;
     font-size: 12px;
+    text-align: center;
     width: 90%;
+    margin: auto;
 }
 .insideServices>img{
-    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    object-fit:inherit;    
+    width: 350px;
+    height: 200px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
-.insideServices:hover img{
-    transform: scale(1.05); 
-    transition-duration: 2s;
-    border-radius: 30px;
-    cursor: pointer;
-}
 
 /* media screen  tab view */
 
@@ -85,10 +101,14 @@
     .servicesFlex{
         display: flex;
         flex-direction: column;
+        gap: 20px;
     }
     .insideServices{
         width: auto;
+        height: auto;
         font-family: 'poppins';
+        border-radius: 10px;
+
     }
     .insideServices>h4{
         font-size: 24px;
@@ -99,18 +119,20 @@
         text-align: center;
         padding-left: 5px;
         font-size: 12px;
-        width: 70%;
+        width: 90%;
         margin: auto;
     }
     .insideServices>img{
-        width: 80%;
+        object-fit:cover;    
+        width: 90%;
+        height: 100%;
         margin-left: 50px;
 
     }
     .insideServices:hover{
         transform: scale(1.05); 
         transition-duration: 1000ms;
-        border-radius: 30px;
+        border-radius: 10px;
         cursor: pointer;
         
     }
@@ -149,6 +171,7 @@
     }
     .insideServices{
         width: auto;
+        height: auto;
         font-family: 'poppins';
     }
     .insideServices>h4{
@@ -158,9 +181,8 @@
     
     .insideServices>p{
         text-align: center;
-        padding-left: 5px;
         font-size: 12px;
-        width: 90%;
+        width: 100%;
         margin: auto;
     }
     .insideServices>img{
@@ -171,7 +193,6 @@
     .insideServices:hover{
         transform: scale(1.05); 
         transition-duration: 1000ms;
-        border-radius: 30px;
         cursor: pointer;
         
     }

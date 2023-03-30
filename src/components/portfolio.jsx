@@ -10,11 +10,11 @@ import "../components/portfolio.css";
 
 function Portfolio(){
     return(
-        <div className="portfolio">
+        <div className="portfolio" id="Gallery">
                 <div className="portfolioTop">
                     <div className="portfolioText">
                         <p>Our Portfolio</p>
-                        <h2>all interior design solutions</h2>
+                        <h2>We build creative home theater designs</h2>
                     </div>
 
                     <div className="portfolioImages">

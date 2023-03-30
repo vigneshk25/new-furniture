@@ -1,23 +1,33 @@
 /* header section image and text */
+body{
+    overflow-x: hidden;
+}
 
 .headImg{
     width: auto;
     height: 110vh;
-    background-image: url(../img/top.png);
     background-size: cover;
-    padding-top: 30vh;
+    position: relative;
+}
+
+.bgimg{
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index:-1;
 }
 
 .headText{
     text-align: center;
     width: 70%;
-    margin: auto ;
+    margin: auto;
+    padding-top: 350px;
 }
 
 .headText>h1{
     font-family: 'poppins';
     font-size: 32px;
-    font-weight: 500;
+    font-weight: 600;
     color: white;
     padding-bottom: 20px;
 }
@@ -27,8 +37,8 @@
     margin: auto;
     color: white;
     font-family: 'saira';
-    font-size: 13px;
-    font-weight: 400;
+    font-size: 15px;
+    font-weight: 500;
     padding-bottom: 25px;
 }
 .contBtn{
@@ -39,8 +49,8 @@
     font-size: 20px;
     font-weight: 800;
     letter-spacing: 2px;
-    background-color: rgba(255, 255, 255, 0.548);
-    color: white;
+    background-color: rgba(255, 255, 255, 0.925);
+    color: black;
 }
 
 .contBtn:hover{
@@ -48,7 +58,7 @@
     transition-duration: 1000ms;
     cursor: pointer;
     background-color: white;
-    color: black;
+    color: blue;
 }
 
 
@@ -59,6 +69,7 @@
     left: 91%;
     width: 70px;
     position: fixed;
+    z-index: 10;
     cursor: pointer;
     padding: 7px;
     background-color: rgb(14, 80, 14);
@@ -78,21 +89,29 @@
 
 @media screen and (max-width : 929px) {
     .headImg{
-        width: auto;
+        width: 100%;
         height: 80vh;
-        background-image: url(../img/top.png);
         background-size: cover;
         padding-top: 30vh;
     }
     
     .headText{
-        text-align: center;
         width: auto;
-        margin: auto ;
+        position: absolute;
+        top: 80px;
+    }
+    .bgimg{
+        position:absolute;
+        left:0px;
+        top:0px;
+        object-fit:cover;
+        z-index:-1;
     }
     
     .headText>h1{
         font-family: 'poppins';
+        width: 90%;
+        margin: auto;
         font-size: 28px;
         font-weight:500;
         color: white;
@@ -104,7 +123,7 @@
         margin: auto;
         color: white;
         font-family: 'poppins';
-        font-size: 13px;
+        font-size: 14px;
         font-weight: 400;
         padding-bottom: 25px;
     }
@@ -147,25 +166,28 @@
 @media screen and (max-width : 460px) {
 
     .headImg{
-        width: auto;
-        height: 90vh;
-        background-image: url(../img/top.png);
-        background-size: cover;
-        padding-top: 30vh;
+        width: 100%;
+        height: 50vh;
     }
     
     .headText{
-        text-align: center;
         width: auto;
-        margin: auto ;
+        position: absolute;
+        top: -120px;
     }
-    
+    .bgimg{
+        position:absolute;
+        left:0px;
+        top:0px;
+        object-fit:cover;
+        z-index:-1;
+    }
     .headText>h1{
         font-family: 'poppins';
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 700;
         color: white;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
     
     .headText>p{
@@ -173,12 +195,12 @@
         margin: auto;
         color: white;
         font-family: 'poppins';
-        font-size: 10px;
+        font-size: 13px;
         font-weight: 400;
-        padding-bottom: 25px;
+        padding-bottom: 10px;
     }
     .contBtn{
-        padding: 8px 28px;
+        padding: 6px 18px;
         border-radius: 10px;
         border: transparent;
         font-family: 'saira';
@@ -202,6 +224,8 @@
         padding: 7px;
         background-color: rgb(14, 80, 14);
         border-radius: 50%;
+        z-index: 0;
+        
     }
     
     .wtsapp:hover{

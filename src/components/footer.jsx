@@ -21,13 +21,13 @@ function Footer(){
                         <img src={phone} alt="phone" />
                         <h2>Contact</h2>
                         </div>
-                        <p><a href="tel:+918217229947">+91 98765 43210</a></p>
+                        <p><a href="tel:+918496955369">+91 84969 55369</a></p>
 
                         <div className="phone">
                         <img src={mail} alt="mail" />
                         <h2>Mail</h2>
                         </div>
-                        <p>info@gamil.com</p>
+                        <p>cinetrendzindia@gmail.com</p>
                     </div>
 
                     <div className="address">
@@ -35,13 +35,14 @@ function Footer(){
                             <img src={address} alt="" />
                             <h1>Address</h1>
                         </div>
-                        <p>#32 , 13th cross main road , Bengaluru 560023</p>
+                        <h5>Demo Center</h5>
+                        <p>#447, 1st Floor, BEML, HBCS Layout, 1st stage, Basaveshwaranagar, Bengaluru - 560079</p>
                     </div>
                 </div>
             </div>
 
                 <div className="copyright">
-                    <p>Copyright © 2023 | All Rights Simple</p>
+                    <p>Copyright © 2023 | All Rights Cinetrendz</p>
                 </div>
             </div>
     )

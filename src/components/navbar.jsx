@@ -1,6 +1,9 @@
 import React, {useEffect, useState} from "react";
+import whts from '../img/whatsapp.png';
+import phone from '../img/telephone.png';
+import mail from '../img/email.png';
+import inst from '../img/instagram.png';
 import '../components/navbar.css';
-
 
 
 function Navbar() {
@@ -8,16 +11,24 @@ function Navbar() {
         const [toogleIcon, setToggleIcon] = useState('navToggler');
         const [color , setColor] = useState (false);
 
+
         useEffect(()=>{
           navToggle();
         },[])
         const navToggle = () =>{
-            active === 'navMenu' 
-            ? setActive('navMenu navActive')
-            :setActive('navMenu');
+            // active === 'navMenu ' 
+            // ? setActive('navMenu navActive')
+            // :setActive('navMenu');
+
+            if('navMenu' === active ){
+              setActive('navMenu navActive')
+            }else {
+              setActive('navMenu')
+            }
+
+        
 
             // toogle animation 
-
             toogleIcon === 'navToggler' 
             ? setToggleIcon('navToggler toggler')
             : setToggleIcon('navToggler')
@@ -30,39 +41,55 @@ function Navbar() {
              }else{
               setColor(false)
              }
-            console.log("line:29")
             }
             window.addEventListener('scroll', changeBG)
 
+
+            // if(toogleIcon.style.display === 'block'){
+            //   toogleIcon.style.display === 'none';
+            // }else{
+            //   toogleIcon.style.display === 'block'
+            // }
+            
             
 
         }
   return (
       <nav className={color ? 'navbarAc' : 'nav'}>
-        <a href="#" className="navBrand">
+        <a href="#home" className="navBrand">
         Cinetrendz
         </a>
         <ul className={active}>
           <li className="navItem">
-            <a href="#" className="navLink">
+            <a href="#home" className="navLink">
               Home
             </a>
           </li>
           <li className="navItem">
-            <a href="#" className="navLink">
+            <a href="#Service" className="navLink">
             Service
             </a>
           </li>
           <li className="navItem">
-            <a href="#" className="navLink">
-              Products
-            </a>
+            <a href="#Gallery" className="navLink">Gallery</a>
+            {/* <ul className="navDown act">
+              <li>one</li>
+              <li>two</li>
+              <li>three</li>
+            </ul> */}
           </li>
           <li className="navItem">
-            <a href="#" className="navLink">
-              Contact
+            <a href="#About" className="navLink">
+              About Us
             </a>
           </li>
+
+          <div className="logo">
+          <a href="http://wa.me/+917795382526" ><img src={whts} alt="" /></a>
+          <a href="tel:+918217229947"><img src={phone} alt="" /></a>
+          <a href="mailto:support@gmail.com"> <img src={mail} alt="" /></a>
+          <a href="https://goo.gl/maps/MENWpWngERJbp8Jq7"><img src={inst} alt="" /></a>
+        </div>
         </ul>
 
         <div onClick={navToggle} className={toogleIcon}>
@@ -70,6 +97,8 @@ function Navbar() {
           <div className="line2"></div>
           <div className="line3"></div>
         </div>
+
+        
       </nav>
   );
 }
