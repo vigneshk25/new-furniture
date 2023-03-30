@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import "../components/ourservices.css";
 import one from '../img/home theater.jpg';
@@ -19,7 +19,7 @@ function Ourservices() {
         <div className="insideServices">
           <img
             src={one}
-            alt="image"
+            alt=""
           />
           <h4>Complete Home Theater Soulutions</h4>
           <p>
@@ -32,7 +32,7 @@ function Ourservices() {
         <div className="insideServices">
           <img
             src="https://auraacoustic.com/wp-content/uploads/2022/11/wall-1-300x169.jpg"
-            alt="image"
+            alt=""
           />
           <h4>Premium quality Acoustic wall</h4>
           <p>
@@ -44,7 +44,7 @@ function Ourservices() {
         <div className="insideServices">
           <img
             src={automation}
-            alt="image"
+            alt=""
           />
           <h4>Home Automation</h4>
           <p>
@@ -56,7 +56,7 @@ function Ourservices() {
          <div className="insideServices">
           <img
             src={seat}
-            alt="image"
+            alt=""
           />
           <h4>Customies Your Recliner Seats</h4>
           <p>
@@ -68,7 +68,7 @@ function Ourservices() {
          <div className="insideServices">
           <img
             src={star}
-            alt="image"
+            alt=""
           />
           <h4>OFC Star Ceiling</h4>
           <p>

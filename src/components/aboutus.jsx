@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import EL from '../img/EL.jpg';
 
 import '../components/aboutus.css';

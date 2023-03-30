@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import imag1 from '../img/10.jpg';
-import imag2 from '../img/8.jpg';
 
 import "../components/furniture.css";
 

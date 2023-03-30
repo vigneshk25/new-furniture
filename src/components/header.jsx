@@ -10,7 +10,7 @@ import "../components/header.css";
 
 function Header() {
   const [selectImg, setSelectImg] = useState(0);
-  const [allImg, setAllImg] = useState([BG1, BG2, BG3, BG4]);
+  const [allImg] = useState([BG1, BG2, BG3, BG4]);
 
   useEffect(() => {
     setInterval(() => {
@@ -31,6 +31,7 @@ function Header() {
           width="100%"
           height="90%"
           className="bgimg"
+          alt=""
         />
 
         <div className="headText">

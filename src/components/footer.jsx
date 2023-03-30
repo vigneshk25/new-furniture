@@ -1,9 +1,8 @@
-import React, {useState} from "react";
+import React from "react";
 
 import phone from '../img/telephone.png';
 import mail from '../img/email.png';
 import address from '../img/location.png';
-import wtsapp from '../img/whatsapp.png'
 import "../components/footer.css";
 
 
