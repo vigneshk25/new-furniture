@@ -1,5 +1,5 @@
 import React from "react";
-import imag1 from '../img/10.jpg';
+import Images from "../image";
 
 import "../components/furniture.css";
 
@@ -9,7 +9,7 @@ function Furniture() {
       <div className="aboutProct">
         <div className="aboutFurniture">
           <div className="furnitureImageFlex">
-            <img src={imag1} alt="" />
+            <img src={Images.BackImg} alt="" />
           </div>
 
           <div className="furnitureText">

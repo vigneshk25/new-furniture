@@ -1,10 +1,7 @@
 import React from "react";
 
 import "../components/ourservices.css";
-import one from '../img/home theater.jpg';
-import automation from '../img/HomeAutomation.jpg';
-import seat from '../img/seats.jpg';
-import star from '../img/star.jpg'
+import Images from "../image";
 
 function Ourservices() {
   return (
@@ -18,7 +15,7 @@ function Ourservices() {
         {/* 1st one */}
         <div className="insideServices">
           <img
-            src={one}
+            src={Images.HomeTheater}
             alt=""
           />
           <h4>Complete Home Theater Soulutions</h4>
@@ -31,7 +28,7 @@ function Ourservices() {
         {/* 2nd image */}
         <div className="insideServices">
           <img
-            src="https://auraacoustic.com/wp-content/uploads/2022/11/wall-1-300x169.jpg"
+            src={Images.Wall}
             alt=""
           />
           <h4>Premium quality Acoustic wall</h4>
@@ -43,7 +40,7 @@ function Ourservices() {
         {/* 3rd image */}
         <div className="insideServices">
           <img
-            src={automation}
+            src={Images.HomeAutomation}
             alt=""
           />
           <h4>Home Automation</h4>
@@ -55,7 +52,7 @@ function Ourservices() {
          {/*4th image */}
          <div className="insideServices">
           <img
-            src={seat}
+            src={Images.Seats}
             alt=""
           />
           <h4>Customies Your Recliner Seats</h4>
@@ -67,7 +64,7 @@ function Ourservices() {
          {/* 5th image */}
          <div className="insideServices">
           <img
-            src={star}
+            src={Images.WallStars}
             alt=""
           />
           <h4>OFC Star Ceiling</h4>

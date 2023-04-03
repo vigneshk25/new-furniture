@@ -1,9 +1,6 @@
 import React from "react";
-import imag from '../img/11.jpg';
-import imag1 from '../img/10.jpg';
-import imag2 from '../img/8.jpg';
-import imag3 from '../img/9.jpg';
-
+import {Link} from 'react-router-dom';
+import Images from "../image";
 import "../components/portfolio.css";
 
 
@@ -18,14 +15,15 @@ function Portfolio(){
                     </div>
 
                     <div className="portfolioImages">
-                        <img src={imag} alt="img" />
-                        <img src={imag2} alt="img" />
-                        <img src={imag1} alt="img" />
-                        <img src={imag3} alt="img" />
+                        <img src={Images.Portfolio1} alt="" />
+                        <img src={Images.Portfolio2} alt="" />
+                        <img src={Images.Portfolio3} alt="" />
+                        <img src={Images.Portfolio4} alt="" />
                     </div>
 
                     <div className="portfolioProjects">
-                            <h4>view all projects </h4>
+                            
+                            <Link to="/gallery"><h4 className="h4">view all projects </h4></Link>
                     </div>
 
                 </div>

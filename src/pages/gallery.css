@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Arimo:wght@500&family=Comfortaa&family=Kaushan+Script&family=League+Spartan:wght@400;700&family=Oswald&family=Pacifico&family=Poppins&family=Saira&family=Sen&display=swap');
+.galleryWrap{
+    padding-top: 80px;
+    background-color: #998f8f;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    align-items: center;
+    justify-content: center;
+    max-width:100%;
+    margin: auto;
+}
+.oneTwo{
+    padding-bottom: 50px;
+    background-color: #998f8f;
+}
+.galleryWrap .single {
+    width: 400px;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid white;
+  }
+
+.galleryWrap .single img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+}
+
+.galleryWrap .single img:hover {
+    transform: scale(1.02);
+  }
+
+.slideWrap{
+    padding-top: 80px;
+    background-color:  rgb(59, 58, 58);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.slideWrap .btnClose, .slideWrap .btnLeft, .slideWrap .btnRight{
+    position: fixed;
+    cursor: pointer;
+    opacity: 0.6;
+    color: #fff;
+    z-index: 999;
+}
+
+.btnClose , .btnLeft , .btnRight{
+    height: 30px;
+}
+
+.btnClose:hover, .btnLeft:hover, .btnRight:hover{
+    opacity: 1;
+}
+
+.slideWrap .btnClose{
+    top: 40px;
+    right: 40px;
+}
+
+.slideWrap .btnLeft{
+    top: 50%;
+    transform: translateY(-50%);
+    left: 40px;
+}
+
+.slideWrap .btnRight{
+    top: 50%;
+    transform: translateY(-50%);
+    right: 40px;
+}
+
+.fullScreen{
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fullScreen img{
+    max-width: 100%;
+    max-height: 100%;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media screen  tab view */
+
+@media screen and (max-width : 929px) {
+
+    .galleryWrap{
+        padding-top: 80px;
+        background-color: #7a7474;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:10px;
+        align-items: center;
+        justify-content: center;
+        max-width:1005;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+    .galleryWrap .single {
+        width: 100%;
+        padding: 10px;
+        cursor: pointer;
+        border: 1px solid white;
+      }
+    
+    .galleryWrap .single img {
+      width: 350px;
+      height: 200px;
+      margin: auto;
+        display: flex;
+    }
+    
+    .galleryWrap .single img:hover {
+        transform: scale(1.02);
+      }
+    
+    .slideWrap{
+        padding-top: 80px;
+        background-color:  rgba(59, 58, 58, 0.849);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .slideWrap .btnClose, .slideWrap .btnLeft, .slideWrap .btnRight{
+        position: fixed;
+        cursor: pointer;
+        opacity: 0.6;
+        color: #fff;
+        z-index: 999;
+    }
+    
+    .btnClose , .btnLeft , .btnRight{
+        height: 50px;
+    }
+    
+    .btnClose:hover, .btnLeft:hover, .btnRight:hover{
+        opacity: 1;
+    }
+    
+    .slideWrap .btnClose{
+        top: 40px;
+        right: 40px;
+    }
+    
+    .slideWrap .btnLeft{
+        top: 50%;
+        transform: translateY(-50%);
+        left: 40px;
+    }
+    
+    .slideWrap .btnRight{
+        top: 50%;
+        transform: translateY(-50%);
+        right: 40px;
+    }
+    
+    .fullScreen{
+        width: calc(100% - 40px);
+        height: calc(100% - 40px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .fullScreen img{
+        max-width: 100%;
+        max-height: 100%;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+}
+
+
+
+
+
+/* media screen  mobile view */
+
+
+@media screen and (max-width : 460px) {
+    
+    .galleryWrap{
+        padding-top: 90px;
+        background-color: #7a7474;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap:10px;
+        align-items: center;
+        justify-content: center;
+        max-width:100%;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+    .oneTwo{
+        background-color: #7a7474;
+    }
+    .galleryWrap .single {
+        width: 100%;
+        padding: 10px;
+        cursor: pointer;
+        border: 1px solid white;
+      }
+    
+    .galleryWrap .single img {
+      width: 400px;
+      height: 200px;
+      margin: auto;
+        display: flex;
+    }
+    
+    .galleryWrap .single img:hover {
+        transform: scale(1.02);
+      }
+    
+    .slideWrap{
+        padding-top: 80px;
+        background-color:  rgba(59, 58, 58, 0.849);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .slideWrap .btnClose, .slideWrap .btnLeft, .slideWrap .btnRight{
+        position: fixed;
+        cursor: pointer;
+        opacity: 0.6;
+        color: #fff;
+        z-index: 999;
+    }
+    
+    .btnClose , .btnLeft , .btnRight{
+        height: 30px;
+    }
+    
+    .btnClose:hover, .btnLeft:hover, .btnRight:hover{
+        opacity: 1;
+    }
+    
+    .slideWrap .btnClose{
+        top: 330px;
+        right: 40px;
+    }
+    
+    .slideWrap .btnLeft{
+        top: 55%;
+        transform: translateY(-50%);
+        left: 20px;
+    }
+    
+    .slideWrap .btnRight{
+        top: 55%;
+        transform: translateY(-50%);
+        right: 20px;
+    }
+    
+    .fullScreen{
+        width: calc(100% - 40px);
+        height: calc(100% - 40px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .fullScreen img{
+        max-width: 100%;
+        max-height: 100%;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+}

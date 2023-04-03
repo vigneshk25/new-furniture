@@ -1,14 +1,11 @@
 import React, {useEffect, useState} from "react";
-import whts from '../img/whatsapp.png';
-import phone from '../img/telephone.png';
-import mail from '../img/email.png';
-import inst from '../img/instagram.png';
+import Images from "../image";
 import '../components/navbar.css';
 
 
 function Navbar() {
-    const [active,setActive] = useState('navMenu');
-        const [toogleIcon, setToggleIcon] = useState('navToggler');
+    const [active,setActive] = useState('!navMenu');
+        const [toogleIcon, setToggleIcon] = useState('!navToggler');
         const [color , setColor] = useState (false);
 
 
@@ -85,10 +82,10 @@ function Navbar() {
           </li>
 
           <div className="logo">
-          <a href="http://wa.me/+917795382526" ><img src={whts} alt="" /></a>
-          <a href="tel:+918217229947"><img src={phone} alt="" /></a>
-          <a href="mailto:support@gmail.com"> <img src={mail} alt="" /></a>
-          <a href="https://goo.gl/maps/MENWpWngERJbp8Jq7"><img src={inst} alt="" /></a>
+          <a href="http://wa.me/+917795382526" ><img src={Images.WhatsApp} alt="" /></a>
+          <a href="tel:+918217229947"><img src={Images.phone} alt="" /></a>
+          <a href="mailto:support@gmail.com"> <img src={Images.Mail} alt="" /></a>
+          <a href="https://goo.gl/maps/MENWpWngERJbp8Jq7"><img src={Images.Mail} alt="" /></a>
         </div>
         </ul>
 
