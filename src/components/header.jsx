@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from "react";
-
 // Background Images
-import Images from "../image";
+import BG1 from '../img/BG1.jpg';
+import BG2 from '../img/BG2.jpg';
+import BG3 from '../img/BG3.jpg';
+import BG4 from '../img/BG4.jpg';
+import BG5 from '../img/9.jpg';
+import Whatsapp from '../img/whatsapp.png';
 import "../components/header.css";
 
 function Header() {
   const [selectImg, setSelectImg] = useState(0);
-  const [allImg] = useState([Images.BG1, Images.BG2, Images.BG3, Images.BG4,Images.img12]);
+  const [allImg] = useState([BG1, BG2,BG3,BG4,BG5]);
 
   useEffect(() => {
     setInterval(() => {
@@ -18,7 +22,7 @@ function Header() {
     <header id="home">
       <div>
         <a href="http://wa.me/+918496955369">
-          <img className="wtsapp" src={Images.WhatsApp} alt="" />
+          <img className="wtsapp" src={Whatsapp} alt="" />
         </a>
       </div>
       <div className="headImg">

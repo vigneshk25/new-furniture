@@ -50,10 +50,12 @@
 }
 
 .h4{
+    color: white;
+    text-decoration: none;
     border: 1px solid white;
-    width: 20%;
+    width: 50%;
     padding: 10px;
-    margin: 30px auto auto ;
+    margin: 20px auto auto ;
 }
 
 .portfolioProjects>h4:hover{

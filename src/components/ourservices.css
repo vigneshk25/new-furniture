@@ -28,7 +28,7 @@
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
     gap: 20px;
-    grid-auto-rows: minmax(100px , auto);
+    grid-auto-rows: minmax(10px , auto);
     margin:5px;
     padding: 10px;
 }

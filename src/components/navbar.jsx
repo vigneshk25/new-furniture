@@ -1,102 +1,50 @@
-import React, {useEffect, useState} from "react";
-import Images from "../image";
-import '../components/navbar.css';
+import React, { useRef } from "react";
+import "../components/navbar.css";
+import { FaBars, FaTimes } from "react-icons/fa";
+import {Link} from 'react-router-dom';
+import whtsapp from '../img/whatsapp.png';
+import phone from '../img/telephone.png';
+import mail from '../img/email.png';
+import address from '../img/marker.png';
 
 
 function Navbar() {
-    const [active,setActive] = useState('!navMenu');
-        const [toogleIcon, setToggleIcon] = useState('!navToggler');
-        const [color , setColor] = useState (false);
+  const navRef = useRef();
 
-
-        useEffect(()=>{
-          navToggle();
-        },[])
-        const navToggle = () =>{
-            // active === 'navMenu ' 
-            // ? setActive('navMenu navActive')
-            // :setActive('navMenu');
-
-            if('navMenu' === active ){
-              setActive('navMenu navActive')
-            }else {
-              setActive('navMenu')
-            }
-
-        
-
-            // toogle animation 
-            toogleIcon === 'navToggler' 
-            ? setToggleIcon('navToggler toggler')
-            : setToggleIcon('navToggler')
-            
-            // nav bar
-
-            const changeBG = () => {
-             if(window.scrollY < 10){
-              setColor(true)
-             }else{
-              setColor(false)
-             }
-            }
-            window.addEventListener('scroll', changeBG)
-
-
-            // if(toogleIcon.style.display === 'block'){
-            //   toogleIcon.style.display === 'none';
-            // }else{
-            //   toogleIcon.style.display === 'block'
-            // }
-            
-            
-
-        }
+	const showNavbar = () => {
+		navRef.current.classList.toggle(
+			"responsive_nav"
+		);
+	};
+  const onClose = () => {
+    navRef.current.classList.toggle(
+			"responsive_nav"
+		);
+  }
   return (
-      <nav className={color ? 'navbarAc' : 'nav'}>
-        <a href="#home" className="navBrand">
-        Cinetrendz
-        </a>
-        <ul className={active}>
-          <li className="navItem">
-            <a href="#home" className="navLink">
-              Home
-            </a>
-          </li>
-          <li className="navItem">
-            <a href="#Service" className="navLink">
-            Service
-            </a>
-          </li>
-          <li className="navItem">
-            <a href="#Gallery" className="navLink">Gallery</a>
-            {/* <ul className="navDown act">
-              <li>one</li>
-              <li>two</li>
-              <li>three</li>
-            </ul> */}
-          </li>
-          <li className="navItem">
-            <a href="#About" className="navLink">
-              About Us
-            </a>
-          </li>
+    <header className="navBar">
+      <h2><a href="/#home"> Cinetrendz</a></h2>
+      <nav ref={navRef} className="navinside">
+          <Link to='/' onClick={onClose}> Home</Link>
+          <a href="/#Service" onClick={onClose}>Service</a>
+          <a href="/#Gallery"  onClick={onClose}>Gallery</a>
+          <a href="/#About"  onClick={onClose}>About Us</a>
 
-          <div className="logo">
-          <a href="http://wa.me/+917795382526" ><img src={Images.WhatsApp} alt="" /></a>
-          <a href="tel:+918217229947"><img src={Images.phone} alt="" /></a>
-          <a href="mailto:support@gmail.com"> <img src={Images.Mail} alt="" /></a>
-          <a href="https://goo.gl/maps/MENWpWngERJbp8Jq7"><img src={Images.Mail} alt="" /></a>
-        </div>
-        </ul>
+          <div className="logo" id="logonav">
+              <a href="http://wa.me/+917795382526" ><img src={whtsapp} alt="" /></a>
+              <a href="tel:+918217229947"><img src={phone} alt="" /></a>
+              <a href="mailto:support@gmail.com"> <img src={mail} alt="" /></a>
+              <a href="https://goo.gl/maps/MENWpWngERJbp8Jq7"><img src={address} alt="" /></a>
+          </div>
 
-        <div onClick={navToggle} className={toogleIcon}>
-          <div className="line1"></div>
-          <div className="line2"></div>
-          <div className="line3"></div>
-        </div>
-
-        
+        <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+          <FaTimes />
+        </button>
       </nav>
+      <button className="nav-btn" onClick={showNavbar}>
+        <FaBars />
+      </button>
+    </header>
   );
 }
 

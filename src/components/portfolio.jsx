@@ -1,7 +1,10 @@
 import React from "react";
 import {Link} from 'react-router-dom';
-import Images from "../image";
 import "../components/portfolio.css";
+import portfolio1 from '../img/8.jpg';
+import portfolio2 from '../img/9.jpg';
+import portfolio3 from '../img/10.jpg';
+import portfolio4 from '../img/11.jpg';
 
 
 
@@ -15,10 +18,11 @@ function Portfolio(){
                     </div>
 
                     <div className="portfolioImages">
-                        <img src={Images.Portfolio1} alt="" />
-                        <img src={Images.Portfolio2} alt="" />
-                        <img src={Images.Portfolio3} alt="" />
-                        <img src={Images.Portfolio4} alt="" />
+                        <img src={portfolio1} alt="" />
+                        <img src={portfolio2} alt="" />
+                        <img src={portfolio3} alt="" />
+                        <img src={portfolio4} alt="" />
+                        
                     </div>
 
                     <div className="portfolioProjects">

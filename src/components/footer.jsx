@@ -1,7 +1,9 @@
 import React from "react";
 // Icon images
-import Images from "../image";
 import "../components/footer.css";
+import phone from '../img/telephone.png';
+import mail from '../img/email.png';
+import address from '../img/marker.png';
 
 
 function Footer(){
@@ -15,13 +17,13 @@ function Footer(){
                 <div className="flex">
                     <div className="contact">
                         <div className="phone">
-                        <img src={Images.phone} alt="phone" />
+                        <img src={phone} alt="phone" />
                         <h2>Contact</h2>
                         </div>
-                        <p><a href="tel:+918496955369">+91 84969 55369</a></p>
+                        <p><a className="phoneNumber" href="tel:+918496955369">+91 84969 55369</a></p>
 
                         <div className="phone">
-                        <img src={Images.Mail} alt="mail" />
+                        <img src={mail} alt="mail" />
                         <h2>Mail</h2>
                         </div>
                         <p>cinetrendzindia@gmail.com</p>
@@ -29,7 +31,7 @@ function Footer(){
 
                     <div className="address">
                         <div className="location">
-                            <img src={Images.Address} alt="" />
+                            <img src={address} alt="" />
                             <h1>Address</h1>
                         </div>
                         <h5>Demo Center</h5>

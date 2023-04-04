@@ -1,7 +1,10 @@
 import React from "react";
-
 import "../components/ourservices.css";
-import Images from "../image";
+import homeThe from '../img/home theater.jpg';
+import wall from '../img/wall.jpg';
+import homeAutomation from '../img/HomeAutomation.jpg';
+import seats from '../img/seats.jpg';
+import star from '../img/star.jpg';
 
 function Ourservices() {
   return (
@@ -15,7 +18,7 @@ function Ourservices() {
         {/* 1st one */}
         <div className="insideServices">
           <img
-            src={Images.HomeTheater}
+            src={homeThe}
             alt=""
           />
           <h4>Complete Home Theater Soulutions</h4>
@@ -28,7 +31,7 @@ function Ourservices() {
         {/* 2nd image */}
         <div className="insideServices">
           <img
-            src={Images.Wall}
+            src={wall}
             alt=""
           />
           <h4>Premium quality Acoustic wall</h4>
@@ -40,7 +43,7 @@ function Ourservices() {
         {/* 3rd image */}
         <div className="insideServices">
           <img
-            src={Images.HomeAutomation}
+            src={homeAutomation}
             alt=""
           />
           <h4>Home Automation</h4>
@@ -52,7 +55,7 @@ function Ourservices() {
          {/*4th image */}
          <div className="insideServices">
           <img
-            src={Images.Seats}
+            src={seats}
             alt=""
           />
           <h4>Customies Your Recliner Seats</h4>
@@ -64,7 +67,7 @@ function Ourservices() {
          {/* 5th image */}
          <div className="insideServices">
           <img
-            src={Images.WallStars}
+            src={star}
             alt=""
           />
           <h4>OFC Star Ceiling</h4>

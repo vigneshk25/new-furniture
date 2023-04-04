@@ -62,6 +62,10 @@
     letter-spacing: 1px;
     background-color: #13141a;
 }
+.phoneNumber{
+    text-decoration: none;
+    color: aliceblue;
+}
 
 
 
@@ -181,8 +185,8 @@
     }
     .phone>img{
         margin-top: 15px;
-        width: 15px;
-        height: 15px;
+        width: 20px;
+        height: 20px;
     }
     .address{
         padding-bottom: 20px;
@@ -195,12 +199,16 @@
         font-size: 17px;
     }
     .location>img{
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
     }
     .address>p{
         font-size: 14px;
         padding-left: 40px;
+    }
+    .address>h5{
+        padding-left: 30px;
+        color: yellowgreen;
     }
     
     
