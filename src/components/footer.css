@@ -157,8 +157,9 @@
         background-color: #23262f;
     }
     .flex{
+        display: flex;
         flex-direction: column;
-        padding-left: 60px;
+        padding-left: 30px;
         gap: 10px;
     }
     .footerHead{

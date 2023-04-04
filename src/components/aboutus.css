@@ -134,8 +134,9 @@
     
     .aboutUsDes{
         background-color: white;
+        width: 80%;
+        height: 90%;
         border-radius: 10px;
-        width: 100%;
         padding: 30px;
         align-items: center;
         text-align: center;

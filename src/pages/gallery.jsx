@@ -23,7 +23,8 @@ const Gallery = ({galleryPhotos})=>{
     const handleClose = () => {
         setOpenModal(false)
     }
-    // prv image
+    // prv imagey
+    
     const handleLeft = () => {
         slideNumber === 0 ? setSlideNumvber(galleryPhotos.length -1 ) : setSlideNumvber( slideNumber -1)
     }
@@ -45,6 +46,7 @@ const Gallery = ({galleryPhotos})=>{
             } 
 
             <div className="galleryWrap">
+                <h1>Gallery</h1>
                 {
                     galleryPhotos && galleryPhotos.map((slide , index)=>{
                         return(

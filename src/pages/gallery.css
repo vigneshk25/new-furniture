@@ -2,6 +2,7 @@
 .galleryWrap{
     padding-top: 80px;
     background-color: #998f8f;
+    padding-left: 10px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap:20px;
@@ -97,7 +98,13 @@
 }
 
 
-
+.galleryWrap>h1{
+    color: white;
+    text-align: center;    
+    border: 1px solid white;
+    width: 70%;
+    margin: auto;
+}
 
 
 
@@ -224,8 +231,6 @@
         display: grid;
         grid-template-columns: repeat(1,1fr);
         gap:10px;
-        align-items: center;
-        justify-content: center;
         max-width:100%;
         margin: 0 auto;
         padding-bottom: 50px;
@@ -233,17 +238,22 @@
     .oneTwo{
         background-color: #7a7474;
     }
+    .galleryWrap>h1{
+        color: white;
+        text-align: center;
+    }
     .galleryWrap .single {
-        width: 100%;
+        width: 90%;
         padding: 10px;
         cursor: pointer;
         border: 1px solid white;
       }
     
     .galleryWrap .single img {
-      width: 400px;
+      width: 350px;
       height: 200px;
       margin: auto;
+      object-fit: cover;
         display: flex;
     }
     
