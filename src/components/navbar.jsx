@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom';
 import whtsapp from '../img/whatsapp.png';
 import phone from '../img/telephone.png';
 import mail from '../img/email.png';
+import logoC from '../img/logo.png';
 import address from '../img/marker.png';
 
 
@@ -22,13 +23,14 @@ function Navbar() {
 		);
   }
   return (
-    <header className="navBar">
-      <h2><a href="/#home"> Cinetrendz</a></h2>
+    <header className="navBar" id="topNav">
+      <img src={logoC} alt="" className="logoC" data-aos="fade-down" data-aos-delay="100"  data-aos-duration="1000" />
       <nav ref={navRef} className="navinside">
           <Link to='/' onClick={onClose}> Home</Link>
           <a href="/#Service" onClick={onClose}>Service</a>
           <a href="/#Gallery"  onClick={onClose}>Gallery</a>
-          <a href="/#About"  onClick={onClose}>About Us</a>
+          <a href="/#getIn"  onClick={onClose}>Contact</a>
+          <a href="/#About" className="whyus"  onClick={onClose}>Why us?</a>
 
           <div className="logo" id="logonav">
               <a href="http://wa.me/+917795382526" ><img src={whtsapp} alt="" /></a>

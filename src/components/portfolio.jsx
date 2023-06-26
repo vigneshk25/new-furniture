@@ -12,22 +12,22 @@ function Portfolio(){
     return(
         <div className="portfolio" id="Gallery">
                 <div className="portfolioTop">
-                    <div className="portfolioText">
+                    <div className="portfolioText" data-aos="fade-right" data-aos-delay="100"  data-aos-duration="3000">
                         <p>Our Portfolio</p>
                         <h2>We build creative home theater designs</h2>
                     </div>
 
-                    <div className="portfolioImages">
-                        <img src={portfolio1} alt="" />
-                        <img src={portfolio2} alt="" />
-                        <img src={portfolio3} alt="" />
-                        <img src={portfolio4} alt="" />
+                    <div className="portfolioImages" >
+                        <img src={portfolio1} alt="" data-aos="fade-left" data-aos-delay="100"  data-aos-duration="3000" />
+                        <img src={portfolio2} alt="" data-aos="fade-left" data-aos-delay="80"  data-aos-duration="3000" />
+                        <img src={portfolio3} alt="" data-aos="fade-left" data-aos-delay="60"  data-aos-duration="3000" />
+                        <img src={portfolio4} alt="" data-aos="fade-left" data-aos-delay="40"  data-aos-duration="3000" />
                         
                     </div>
 
                     <div className="portfolioProjects">
                             
-                            <Link to="/gallery"><h4 className="h4">view all projects </h4></Link>
+                            <Link to="/gallery"><h4 className="h4" data-aos="fade-left" data-aos-delay="100"  data-aos-duration="3000">view all projects </h4></Link>
                     </div>
 
                 </div>

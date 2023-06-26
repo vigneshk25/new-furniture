@@ -1,18 +1,19 @@
 import React from "react";
 import one from '../img/4.jpg';
 
+
 import "../components/furniture.css";
 
 function Furniture() {
   return (
     <div>
       <div className="aboutProct">
-        <div className="aboutFurniture">
+        <div className="aboutFurniture" data-aos="fade-right" data-aos-delay="100"  data-aos-duration="3000">
           <div className="furnitureImageFlex">
             <img src={one} alt="" />
           </div>
 
-          <div className="furnitureText">
+          <div className="furnitureText" >
           <h1>Automation & Theater Experience Center</h1>
             <p>
             Experience what home automation and home entertainment can do to your home at our experience center located at Basaveshwara Nagar Bengaluru . The range of possibilities that open up when you have a smart home are limitless. It can only be experienced to believe.</p>
@@ -33,6 +34,8 @@ function Furniture() {
           </div>
         </div>
       </div> */}
+
+      
     </div>
   );
 }

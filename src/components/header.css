@@ -74,7 +74,7 @@ body{
     left: 91%;
     width: 70px;
     position: fixed;
-    z-index: 10;
+    z-index: 100;
     cursor: pointer;
     padding: 7px;
     background-color: rgb(14, 80, 14);
@@ -86,8 +86,31 @@ body{
     transition-duration: 1000ms;
 
 }
+.phonewtsapp{
+    display: none;
+}
+.quotes{
+    border-radius: 50px 1px;
+    padding: 50px;
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    background-color: #2f333d;
+   
+}
 
-
+.hold{
+    color: green;
+    font-size: 28px;
+}
+.quo_p{
+    font-size: 18px;
+    width: 90%;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    color: white;
+}
 
 
 /* media screen  tab view */
@@ -163,6 +186,10 @@ body{
         transition-duration: 1000ms;
     
     }
+    .phonewtsapp{
+    display: none;
+}
+
 }
 
 /* media screen  mobile view */
@@ -223,22 +250,41 @@ body{
     
     .wtsapp{
         top: 88%;
-        left: 78%;
+        left: 75%;
         width: 65px;
-        opacity: 90%;
+        height: 65px;
         position: fixed;
+        z-index: 100;
         cursor: pointer;
         padding: 7px;
         background-color: rgb(14, 80, 14);
         border-radius: 50%;
-        z-index: 0;
-        
+        display: block;
     }
     
-    .wtsapp:hover{
-        transform: scale(1.1); 
-        transition-duration: 1000ms;
-    
+    .phonewtsapp{
+        display: block;
+    }
+    .quotes{
+        border-radius: 30px 1px;
+        padding: 10px;
+        width: 90%;
+        align-items: center;
+        margin: auto auto 30px auto ;
+        background-color: #2f333d;
+    }
+    .hold{
+        color: green;
+        font-size: 22px;
+    }
+    .quo_p{
+        line-height: 32px;
+        font-size: 12px;
+        width: 95%;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        color: white;
     }
 
 }

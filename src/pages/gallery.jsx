@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import '../pages/gallery.css';
 import {  FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -14,6 +14,9 @@ const Gallery = ({galleryPhotos})=>{
     const [slideNumber , setSlideNumvber] = useState(0)
     const [openModal , setOpenModal] = useState(false)
 
+    useEffect(()=>{
+        window.scrollTo(0,0)
+    },[])
     const handleOpen =(index) =>{
         setSlideNumvber(index)
         setOpenModal(true)

@@ -1,11 +1,10 @@
 /* our services */
 .ourServices{
     width: 100%;
-    padding-top: 40px;
     padding-bottom: 20px;
     background-color: white;
     font-family: 'poppins';
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 .topSecServices{
@@ -13,6 +12,10 @@
     margin: auto;
     width: 80%;
     text-align: center;
+}
+
+.prod_flex img{
+    object-fit:contain;
 }
 
 .topSecServices>p{
@@ -70,6 +73,19 @@
     height: 200px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
+
+.prod_flex{
+    display: grid;
+    grid-template-columns: auto auto ;
+    gap: 10px;
+    text-align: center;
+}
+.prod_flex img{
+    width: 200px;
+    height: 90px;
+}
+
+
 
 
 /* media screen  tab view */
@@ -195,5 +211,16 @@
         transition-duration: 1000ms;
         cursor: pointer;
         
+    }
+
+    .prod_flex{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        text-align: center;
+    }
+    .prod_flex img{
+        width: 11rem;
+        height: 7rem;
     }
 }

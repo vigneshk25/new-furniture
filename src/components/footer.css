@@ -66,7 +66,17 @@
     text-decoration: none;
     color: aliceblue;
 }
+.logoCF{
+    width: 200px;
+}
 
+.social_media{
+    width: 20px;
+    border: 1px solid whitesmoke;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+}
 
 
 /* media screen  tab view */
@@ -223,6 +233,14 @@
         color: red;
         transform: scale(1.1); 
         transition-duration: 1000ms;
-    
     }
+
+    
+.social_media{
+    width: 25px;
+    border: 1px solid whitesmoke;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+}
 }

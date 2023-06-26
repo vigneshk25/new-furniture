@@ -4,6 +4,11 @@ import "../components/footer.css";
 import phone from '../img/telephone.png';
 import mail from '../img/email.png';
 import address from '../img/marker.png';
+import logoC from '../img/logo.png';
+import insta from '../img/insta.gif';
+import fb from '../img/fb.gif';
+import yt from '../img/yt.gif';
+
 
 
 function Footer(){
@@ -12,9 +17,23 @@ function Footer(){
 
                 <div className="footerHead">
                     <div className="brandName">
-                        <h1>Cinetrendz</h1>
+                        <img src={logoC} alt=""  className="logoCF" data-aos="fade-right" data-aos-delay="100"  data-aos-duration="3000" />
+
+                        <div>
+                        <div className="footer_social" >
+                    <a href="https://www.instagram.com/cinetrendzofficial/" target='_blank' rel='noreferrer noopener'>
+                        <img src={insta} alt="" className='social_media' />
+                    </a>
+                        <a href="https://linkedin.com" target='_blank' rel='noreferrer noopener' >
+                            <img src={fb} alt="" className='social_media' />
+                        </a>
+                        <a href="https://linkedin.com" target='_blank' rel='noreferrer noopener' >
+                                <img src={yt} alt="" className='social_media' />
+                        </a>
+                </div>
+                        </div>
                     </div>
-                <div className="flex">
+                <div className="flex" data-aos="fade-left" data-aos-delay="100"  data-aos-duration="3000">
                     <div className="contact">
                         <div className="phone">
                         <img src={phone} alt="phone" />
