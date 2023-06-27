@@ -63,13 +63,13 @@ function Aboutus(){
         <div className="whowe" data-aos="fade-left" data-aos-delay="100"  data-aos-duration="3000">
           <img src={movie} alt="" />
             <h3>WHAT WE DO ?</h3>
-            <p>cnetrendz is a full function Audio and Video Systems Design and Integration company. We take pride in listening to what you, our customer is passionate about and build a system to meet your lifestyle and expectations.</p>
+            <p>Cinetrendz is a full function Audio and Video Systems Design and Integration company. We take pride in listening to what you, our customer is passionate about and build a system to meet your lifestyle and expectations.</p>
         </div>
 
         <div className="whowe" data-aos="fade-left" data-aos-delay="100"  data-aos-duration="3000">
           <img src={clock} alt="" />
             <h3>WHY US ?</h3>
-            <p>Our mission at Bluewave is to provide our clients with tailor made audio visual integrated systems that suit their needs. We aim to offer customised solutions in telecommunications and document solution products that suffice their quality and economic demands.</p>
+            <p>Our mission at Cinetrendz is to provide our clients with tailor made audio visual integrated systems that suit their needs. We aim to offer customised solutions in telecommunications and document solution products that suffice their quality and economic demands.</p>
           </div>
 
       </div>

@@ -48,7 +48,7 @@ function Header() {
 
 
       <div className="quotes" data-aos="fade-left" data-aos-delay="100"  data-aos-duration="1000" >
-        <p className="quo_p" data-aos="fade-left" data-aos-delay="150"  data-aos-duration="3000" > <span className="hold" > Cinetrendz </span> offers the best end-to-end home theatre solution from consulting, design, acoustics, material planning and execution, ensuring a hassle free and time and time saving experience with uncompromising quality!</p>
+        <p className="quo_p" data-aos="fade-left" data-aos-delay="150"  data-aos-duration="3000" > <span className="hold" > Cinetrendz </span> offers the best end-to-end home theatre solution from consulting, design, acoustics, material planning and execution, ensuring a hassle free and time saving experience with uncompromising quality!</p>
       </div>
     </header>
   );
